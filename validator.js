@@ -15,16 +15,11 @@ class Validator {
     }
 
     if (typeof callback !== 'function') {
-        if (options.dns) {
-            throw new TypeError('expected callback function for checkDNS option');
-        }
-
         callback = null;
     }
 
     // Convert options to format expected by isemail.validate()
     var opts = {
-        checkDNS: options.dns,
         errorLevel: true
     };
 
