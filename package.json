@@ -1,0 +1,22 @@
+{
+  "name": "lambda-isemail",
+  "version": "1.0.0",
+  "description": "create end point in order to check validitity of an email address",
+  "main": "handler.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ilia/lambda-isemail.git"
+  },
+  "author": "Ilia Mogilevsky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ilia/lambda-isemail/issues"
+  },
+  "homepage": "https://github.com/Ilia/lambda-isemail#readme",
+  "devDependencies": {
+    "isemail": "^3.0.0"
+  }
+}
