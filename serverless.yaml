@@ -6,10 +6,19 @@ provider:
   name: aws
   runtime: nodejs4.3
 
+package:
+  include:
+    - node_modules/**
+  exclude:
+    - package.json
+
 functions:
-  currentTime:
+  isemail:
     handler: handler.isemail
     events:
       - http:
-          path: check
+          path: isemail
           method: get
+          request:
+            template:
+              application/json: '{ "email" : "$input.params(''email'')" }'
