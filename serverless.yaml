@@ -18,7 +18,8 @@ functions:
     events:
       - http:
           path: isemail
-          method: get
+          method: GET
+          integration: lambda
           request:
             template:
               application/json: '{ "email" : "$input.params(''email'')" }'
